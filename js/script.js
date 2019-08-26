@@ -29,7 +29,9 @@ $(Document).on('click','searchButton',function(){
             var s = $('<p>').text('Rating', +rating);
             var animated = response.data[i].images.fixed_height.utl;
             var still = response.data[i].images.fixed_height_still.url;
-            
+            searchDiv.append(p);
+            searchDiv.append(image);
+            $('searches').append(search)
 
         }
     })
